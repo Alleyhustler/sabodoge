@@ -1,0 +1,250 @@
+body {
+    font-family: 'Fredoka One', cursive;
+    background-color: #FFF8E7; /* Light Ivory */
+    color: #2C2C2C; /* Dark Charcoal */
+    margin: 0;
+    padding: 0;
+    cursor: url('images/10\ copy.png'), auto; /* Add this line for custom cursor */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #D4A373; /* Warm Tan */
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2C2C2C; /* Dark Charcoal */
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #8B4513; /* Saddle Brown */
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    height: 30px;
+    width: 30px;
+}
+
+/* Hero Section Animation */
+.hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #E5E5E5; /* Light Grey */
+    animation: heroFadeIn 1.5s ease-in-out;
+}
+
+@keyframes heroFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content {
+    max-width: 600px;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Animated Hero Text */
+.tara-animation {
+    font-size: 48px;
+    margin: 20px 0;
+    background: linear-gradient(90deg, #ff8c00, #e52e71);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: slideBounce 2s ease-in-out, gradient-animation 3s infinite;
+}
+
+@keyframes slideBounce {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    60% {
+        transform: translateX(20%);
+        opacity: 1;
+    }
+    80% {
+        transform: translateX(-10%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Hero Image Animation */
+.animated-hero-image {
+    max-width: 80%;
+    height: auto;
+    border: 5px solid #8B4513; /* Saddle Brown */
+    padding: 10px;
+    animation: zoomIn 2s ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Hero Image Hover Effect */
+.animated-hero-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.hero-image img {
+    max-width: 80%;
+    height: auto;
+    border: 5px solid #8B4513; /* Saddle Brown */
+    padding: 10px;
+}
+
+.cool-text {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #8B0000; /* Dark Red */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.live-button, .make-button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #2C2C2C; /* Dark Charcoal */
+    color: #FFF8E7; /* Light Ivory */
+    transition: background-color 0.3s ease;
+}
+
+.live-button:hover, .make-button:hover {
+    background-color: #8B0000; /* Dark Red */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #FFF8E7; /* Light Ivory */
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #8B4513; /* Saddle Brown */
+    padding: 5px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.grid-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Tokenomics Section */
+.tokenomics {
+    background-color: #FFF8E7; /* Dark Charcoal */
+    color: #FFF8E7; /* Light Ivory */
+    padding: 50px 20px;
+    text-align: center;
+    animation: fadeIn 2s ease;
+}
+
+.tokenomics-title {
+    font-size: 40px;
+    background: linear-gradient(90deg, #ff8c00, #e52e71);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradient-animation 3s infinite;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.tokenomics-content {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.tokenomics-item {
+    background-color: #8B4513; /* Saddle Brown */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tokenomics-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.tokenomics-item p {
+    font-size: 18px;
+}
+
+.tokenomics-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
